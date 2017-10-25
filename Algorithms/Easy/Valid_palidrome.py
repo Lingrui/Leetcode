@@ -6,7 +6,9 @@ class Solution(object):
 		:type s: str
 		:rtype: bool
 		'''
-		array = [i for i in s.lower() if s.isalnum()]
+#array = [i for i in s.lower() if i.isalnum()]
+		array = [i.lower() for i in s  if i.isalnum()]
+		print (array)
 		return array == array[::-1]
 
 if __name__ == '__main__':
